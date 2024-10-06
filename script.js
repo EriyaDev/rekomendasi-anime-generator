@@ -154,12 +154,14 @@ function gantiAnime(){
     button.style.display = "none";
     footer.style.display = "none";
 
+    let genrePrint = animeList[randomNumber - 1].genre.join(", ");
+
     coverAnime.setAttribute("src", "images/anime"+randomNumber+".jpg");
         namaAnime.innerHTML = animeList[randomNumber - 1].judul;
         deskripsi.innerHTML = animeList[randomNumber - 1].deskripsi;
         episode.innerHTML = animeList[randomNumber - 1].jumlahEpisode + " Episodes";
         rating.innerHTML = animeList[randomNumber - 1].rating + " / 10";
-        genre.innerHTML = animeList[randomNumber - 1].genre;
+        genre.innerHTML = genrePrint;
 
     setTimeout(function(){
         loader.classList.remove("loader");
