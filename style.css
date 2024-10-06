@@ -74,6 +74,23 @@ body{
     text-align: left;
 }
 
+h3{
+    margin: 5px 0;
+    color: gray;
+    font-weight: 400;
+}
+
+.value{
+    color: #121212;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.value-dark{
+    color: #fefefe;
+    font-weight: 600;
+}
+
 .anime{
     width: 80%;
     display: flex;
