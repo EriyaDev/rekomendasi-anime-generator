@@ -136,19 +136,25 @@ function gantiAnime(){
     animeContainer.style.display = "none";
     button.style.display = "none";
 
+    coverAnime.setAttribute("src", "images/anime"+randomNumber+".jpg");
+        namaAnime.innerHTML = animeList[randomNumber - 1].judul;
+        deskripsi.innerHTML = animeList[randomNumber - 1].deskripsi;
+        episode.innerHTML = animeList[randomNumber - 1].jumlahEpisode + " Episodes";
+        rating.innerHTML = animeList[randomNumber - 1].rating + " / 10";
+        
     setTimeout(function(){
         loader.classList.remove("loader");
         animeContainer.style.display = "flex";
         button.style.display = "flex";
     }, 2000)
 
-    setTimeout(function(){
-        coverAnime.setAttribute("src", "images/anime"+randomNumber+".jpg");
-        namaAnime.innerHTML = animeList[randomNumber - 1].judul;
-        deskripsi.innerHTML = animeList[randomNumber - 1].deskripsi;
-        episode.innerHTML = animeList[randomNumber - 1].jumlahEpisode + " Episodes";
-        rating.innerHTML = animeList[randomNumber - 1].rating + " / 10";
-    }, 2000)
+    // setTimeout(function(){
+    //     coverAnime.setAttribute("src", "images/anime"+randomNumber+".jpg");
+    //     namaAnime.innerHTML = animeList[randomNumber - 1].judul;
+    //     deskripsi.innerHTML = animeList[randomNumber - 1].deskripsi;
+    //     episode.innerHTML = animeList[randomNumber - 1].jumlahEpisode + " Episodes";
+    //     rating.innerHTML = animeList[randomNumber - 1].rating + " / 10";
+    // }, 2000)
 }
 
 
