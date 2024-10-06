@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    width: 100%;
 }
 
 .light-mode{
@@ -52,7 +52,7 @@ body{
 
 .text{
     text-align: center;
-    line-height: 1rem;
+    line-height: 1.7rem;
 }
 
 .detail{
@@ -101,13 +101,13 @@ body{
 }
 
 footer{
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 1rem 0;
     margin-top: 3rem;
     bottom: 0;
     left: 0;
-    transform: translateY(200px);
+    /* transform: translateY(200px); */
     background-color: #5e43f3;
     color: white;
 
@@ -193,3 +193,12 @@ footer{
     top: calc(50% - 1.25em);
     left: calc(50% - 1.25em);
    }
+
+@media screen and (max-width: 500px) {
+    .anime {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
