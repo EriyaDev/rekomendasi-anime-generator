@@ -55,6 +55,16 @@ body{
     line-height: 1.7rem;
 }
 
+.text h1{
+    color: gray;
+    font-weight: 500;
+}
+
+.text h1 span{
+    color: #5e43f3;
+    font-weight: 700;
+}
+
 .detail{
     font-family: "Montserrat", sans-serif;
     display: flex;
