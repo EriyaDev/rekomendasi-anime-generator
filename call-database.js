@@ -9,6 +9,8 @@ fetch(api)
         let animeName1 = document.querySelector(".nama-anime-1");
         let animeName2 = document.querySelector(".nama-anime-2");
         let recTxt = document.querySelector(".recommendation-txt");
+        let malURL1 = document.querySelector(".mal-url-1");
+        let malURL2 = document.querySelector(".mal-url-2");
         // let animeDesc = document.querySelector(".deskripsi");
         // let animeEpisode = document.querySelector(".jumlah-episode");
         // let animeRating = document.querySelector(".rating");
@@ -32,6 +34,8 @@ fetch(api)
             animeName2.innerHTML = anime2.title;
             imgCover1.setAttribute("src", anime1.images.jpg.large_image_url);
             imgCover2.setAttribute("src", anime2.images.jpg.large_image_url);
+            malURL1.setAttribute("href", anime1.url);
+            malURL2.setAttribute("href", anime2.url);
             recTxt.innerHTML = anime.content;
         })
         

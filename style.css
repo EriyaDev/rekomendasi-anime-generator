@@ -124,6 +124,40 @@ h3{
     border-radius: 10px;
 }
 
+.loading{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.mal-url-1, .mal-url-2{
+  padding: 5px 15px;
+
+  border: 2px solid #5e43f3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #5e43f3;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  transition: .3s
+}
+
+.mal-url-1:hover, .mal-url-2:hover{
+  transform: scale(1.05);
+}
+
+.mal-url-1 img, .mal-url-2 img{
+  height: 1rem;
+}
+
 .instruction{
   text-align: center;
 }
